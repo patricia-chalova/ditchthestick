@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ditchthestick</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="#">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <header>
+        <div id="logo-div">
+            <img id="logo" src="images/logo.png" alt="">
+        </div>
+        <div class="nav-btns-div">
+            <button class="nav-btn" id="nav-mls">Milestones</button>
+            <button class="nav-btn" id="nav-mtv">Motivate Me</button>
+            <button class="nav-btn" id="nav-stats">Statistics</button>
+        </div>
+    </header>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/css/splide.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.css"> -->
+    <link rel="stylesheet" href="cal_heatmap.css">
+
+</head>
+
+<body>
+
+    <h1>When did you have your last cigarette?</h1>
+    <div class="container">
+
+
+        <span class="select-span">
+            <select required name="day" id="day" class="select-box">
+                <option value="--" disabled selected hidden>day</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>
+
+            <select name="month" id="month" class="select-box">
+                <option value="--" disabled selected hidden>month</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <select name="year" id="year" class="select-box">
+                <!--option value="2024">2024</option>
+                <option value="2023">2023</option-->
+                <option value="--" disabled selected hidden>year</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+                <option value="2009">2009</option>
+                <option value="2008">2008</option>
+                <option value="2007">2007</option>
+                <option value="2006">2006</option>
+                <option value="2005">2005</option>
+                <option value="2004">2004</option>
+                <option value="2003">2003</option>
+                <option value="2002">2002</option>
+                <option value="2001">2001</option>
+                <option value="2000">2000</option>
+                <option value="1999">1999</option>
+                <option value="1998">1998</option>
+                <option value="1997">1997</option>
+                <option value="1996">1996</option>
+                <option value="1995">1995</option>
+                <option value="1994">1994</option>
+                <option value="1993">1993</option>
+                <option value="1992">1992</option>
+                <option value="1991">1991</option>
+                <option value="1990">1990</option>
+
+            </select>
+            <select name="hours" id="hours" class="select-box">
+                <option value="--" disabled selected hidden>hour</option>
+                <option value="00">00</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+
+            </select>
+
+            <select name="minutes" id="minutes" class="select-box">
+                <option value="--" disabled selected hidden>minute</option>
+                <option value="00">00</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+                <option value="32">32</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+                <option value="41">41</option>
+                <option value="42">42</option>
+                <option value="43">43</option>
+                <option value="44">44</option>
+                <option value="45">45</option>
+                <option value="46">46</option>
+                <option value="47">47</option>
+                <option value="48">48</option>
+                <option value="49">49</option>
+                <option value="50">50</option>
+                <option value="51">51</option>
+                <option value="52">52</option>
+                <option value="53">53</option>
+                <option value="54">54</option>
+                <option value="55">55</option>
+                <option value="56">56</option>
+                <option value="57">57</option>
+                <option value="58">58</option>
+                <option value="59">59</option>
+
+            </select>
+        </span>
+
+        <button class="calculate" type="button" id="calc">Calculate</button>
+
+        <span class="line-below"></span>
+        
+
+    </div>
+
+    <div id="calc2">
+        <button type="button" class="calculate2" id="continue">Continue to page</button>
+    </div>
+
+    <!--h1>Time passed since last cigarette:</h1-->
+    <h5 style="display:none">You're now: </h5>
+    <h2 class="h2"></h2>
+    <h5 style="display:none">smoke free!</h5>
+    <div class="milestones" style="display:none" id="milestones">
+        <h3 class="h3">Milestones:</h3>
+        <div class="milestones-lst">
+            <ul>
+                <li id="1">1 Hour &rarr; Heart rate drop</li>
+                <li id="2">12 Hours &rarr; Carbon monoxide level returns to normal</li>
+                <li id="3">1 Day &rarr; The risk of heart attack begins to decrease</li>
+                <li id="4">2 Days &rarr; Sense of smell and taste begins to improve</li>
+                <li id="5">3-4 Days &rarr; Body is depleted of nicotine</li>
+                <li id="6">1 Month &rarr; Lung functions are improving</li>
+                <li id="7">1-3 Months &rarr; Circulation continues to improve</li>
+                <li id="8">9 Months &rarr; Lungs are significantly healed</li>
+                <li id="9">1 Year &rarr; The risk of coronary disease drops by half</li>
+                <li id="10">5 Years &rarr; Arteries and blood vessels are widening</li>
+                <li id="11">10 Years &rarr; Chances of lung, mouth, throat or pancreatic cancer
+                    development have significantly reduced</li>
+                <li id="12">15 Years &rarr; The risk of coronary disease is the same as for a
+                    non-smoker</li>
+                <li id="13">20 Years &rarr; The risk of death from smoking related causes drops to
+                    non-smoker levels</li>
+            </ul>
+        </div>
+        <h4 class="h4"></h4>
+    </div>
+
+
+
+
+
+
+
+    <section class="splide" aria-label="Splide Basic HTML Example" style="display:none" id="splide2">
+        <h3 class="h3">Milestones in detail</h3>
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <div id="slide-txt">
+                        <img class="splide-img" src="images/g7107.png" alt="">
+                        In as little as 20 minutes after the last cigarette is smoked, the heart rate drops and returns
+                        to normal. Blood pressure begins to drop, and circulation may start to improve.
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div id="slide-txt">
+                        <img class="splide-img" src="images/12h.png" alt="">
+                        Cigarettes contain a lot of known toxins including carbon monoxide, a gas present in cigarette
+                        smoke.
+                        This gas can be harmful or fatal in high doses and prevents oxygen from entering the lungs and
+                        blood. When inhaled in large doses in a short time, suffocation can occur from lack of oxygen.
+                        After just 12 hours without a cigarette, the body cleanses itself of the excess carbon monoxide
+                        from the cigarettes. The carbon monoxide level returns to normal, increasing the body’s oxygen
+                        levels.
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div id="slide-txt">
+                        <img class="splide-img" src="images/1d.png" alt="">
+                        Just 1 day after quitting smoking, the risk of heart attack begins to decrease. Smoking raises
+                        the risk of developing coronary heart disease by lowering good cholesterol, which makes
+                        heart-healthy exercise harder to do. Smoking also raises blood pressure and increases blood
+                        clots, increasing the risk of stroke.
+                        In as little as 1 day after quitting smoking, a person's blood pressure begins to drop,
+                        decreasing the risk of heart disease from smoking-induced high blood pressure. In this short
+                        time, a person’s oxygen levels will have risen, making physical activity and exercise easier to
+                        do, promoting heart-healthy habits.
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div id="slide-txt">
+                        <img  class="splide-img" src="images/2d.png" alt="">
+                        Smoking damages the nerve endings responsible for the senses of smell and taste. In as little
+                        as 2 days after quitting, a person may notice a heightened sense of smell and more vivid tastes
+                        as these nerves heal.
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div id="slide-txt">
+                        <img class="splide-img" src="images/3d.png" alt="">
+                        3 days after quitting smoking, the nicotine levels in a person’s body are depleted. While it is
+                        healthier to have no nicotine in the body, this initial depletion can cause nicotine withdrawal.
+                        Around 3 days after quitting, most people will experience moodiness and irritability, severe
+                        headaches, and cravings as the body readjusts.
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div id="slide-txt">
+                        <img class="splide-img" src="images/1m.png" alt="">
+                        In as little as 1 month, a person’s lung function begins to improve. As the lungs heal and lung
+                        capacity improves, former smokers may notice less coughing and shortness of breath. Athletic
+                        endurance increases and former smokers may notice a renewed ability for cardiovascular
+                        activities, such as running and jumping.
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div id="slide-txt">
+                        <img class="splide-img" src="images/3m.png" alt="">
+                        For the next several months after quitting, circulation continues to improve.
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div id="slide-txt">
+                        <img class="splide-img" src="images/9m.png" alt="">
+                        Nine months after quitting, the lungs have significantly healed themselves. The delicate,
+                        hair-like structures inside the lungs known as cilia have recovered from the toll cigarette
+                        smoke took on them. These structures help push mucus out of the lungs and help fight infections.
+                        Around this time, many former smokers notice a decrease in the frequency of lung infections
+                        because the healed cilia can do their job more easily.
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div id="slide-txt">
+                        <img class="splide-img" src="images/1y.png" alt="">
+                        One year after quitting smoking, a person’s risk for coronary heart disease decreases by half.
+                        This risk will continue to drop past the 1-year mark.
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div id="slide-txt">
+                        <img class="splide-img" src="images/5years.png" alt="">
+                        Cigarettes contain many known toxins that cause the arteries and blood vessels to narrow. These
+                        same toxins also increase the likelihood of developing blood clots.
+                        After 5 years without smoking, the body has healed itself enough for the arteries and blood
+                        vessels to begin to widen again. This widening means the blood is less likely to clot, lowering
+                        the risk of stroke.
+                        The risk of stroke will continue to reduce over the next 10 years as the body heals more and
+                        more.
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div id="slide-txt">
+                        <img class="splide-img" src="images/10years.png" alt="">
+                        After 10 years, a person’s chances of developing lung cancer and dying from it are roughly cut
+                        in half compared with someone who continues to smoke. The likelihood of developing mouth,
+                        throat, or pancreatic cancer has significantly reduced.
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div id="slide-txt">
+                        <img class="splide-img" src="images/15y.png" alt="">
+                        After 15 years of having quit smoking, the likelihood of developing coronary heart disease is
+                        the equivalent of a non-smoker. Similarly, the risk of developing pancreatic cancer has reduced
+                        to the same level as a non-smoker.
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div id="slide-txt">
+                        <img class="splide-img" src="images/20years.png" alt="">
+                        After 20 years, the risk of death from smoking-related causes, including both lung disease and
+                        cancer, drops to the level of a person who has never smoked in their life. Also, the risk of
+                        developing pancreatic cancer has reduced to that of someone who has never smoked.
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="motivate" id="motivate" style="display: none;">
+        <h3 class="h3">Need some motivation?</h3>
+        <h5></h5>
+        <button class="calculate" type="button" id="motivate-btn">Motivate me</button>
+        <div class="img-animation" style="display: none;"></div>
+
+
+        <div id="motivate-imgs" style="display: none;">
+            <img id="i1" class="img-mot" src="images/imgs_600/charlie.png" style="display: none;">
+            <img id="i2" class="img-mot" src="images/imgs_600/deaths.png" style="display: none;">
+            <img id="i3" class="img-mot" src="images/imgs_600/gaga.png" style="display: none;">
+            <img id="i4" class="img-mot" src="images/imgs_600/lungs.png"  style="display: none;">
+            <img id="i5" class="img-mot" src="images/imgs_600/nicorette.png"  style="display: none;">
+            <img id="i6" class="img-mot" src="images/imgs_600/sales.png" style="display: none;">
+            <img id="i7" class="img-mot" src="images/imgs_600/teeth.png" style="display: none;">
+            <img id="i8" class="img-mot" src="images/imgs_600/throat.png" style="display: none;">
+            <img id="i9" class="img-mot" src="images/imgs_600/chemicals.png" style="display: none;">
+            <img id="i10" class="img-mot" src="images/imgs_600/life.png" style="display: none;">
+            <button class="calculate" type="button" id="next-btn" style="display: none;">Next</button>
+        </div>
+
+    </section>
+
+
+    <!-- clean up ids  -->
+
+    <section class="stats" style="display: none;">
+        <h3 class="h3">Data & Statistics</h3>
+        <p id="stats_text">Below is an anonymous form related to smoking habits. Filling out is completely voluntary and only serves for educational puroposes.
+            If you're a data person, you can find some interesting statistics for the most popular methods for quitting, reasons behind quitting and more based on the inputs.
+            The dataset is also available for download.
+        </p>
+        <form action="post" id="stats_form">
+            <div class="form-main">
+                <div>
+                    <label for="smo-non">Have you ever been a smoker ?</label>
+                    <select name="smo-non" id="smo-non">
+                        <option value="" selected disabled hidden>...</option>
+                        <option value="yes">yes</option>
+                        <option value="no">no</option>
+                    </select>
+                    <label for="age">Age</label>
+                    <input type="text" autofocus name="age" maxlength="3" size="3" id="dig1">
+                    <label for="years-smoking">Years of Smoking</label>
+                    <input type="text" autofocus name="years-smoking" size="3" id="dig2">
+                </div>
+                <div>
+                    <label for="current-smoker">Are you currently smoking ?</label>
+                    <select name="current-smoker" id="cs">
+                        <option value="" selected disabled hidden>...</option>
+                        <option value="yes">yes</option>
+                        <option value="no">no</option>
+                    </select>
+                    <label for="tp-of-prdct">Type of tobacco product</label>
+                    <select name="tp-of-prdct" id="tp-prdct">
+                        <option value="" selected disabled hidden>Choose</option>
+                        <option value="Cigarettes">Cigarettes</option>
+                        <option value="Vaping product">Vaping product</option>
+                        <option value="Cigars">Cigars</option>
+                        <option value="Smokeless product">Smokeless product</option>
+                    </select>
+                    <label for="num-cigs">Number of cigarttes per day</label>
+                    <input type="text" autofocus name="num-cigs" size="3" id="dig3">
+                </div>
+                <div>
+                    <label for="fc">When did you have your first cigarette ?</label>
+                    <input type="text" autofocus name="fc" size="2" id="dig4">
+                    <label for="fc-like">Did you like your first cigarette ?</label>
+                    <select name="fc-like" id="fc-like">
+                        <option value="" selected disabled hidden>...</option>
+                        <option value="yes">yes</option>
+                        <option value="no">no</option>
+                    </select>
+                    <label for="start-smoking">Why did you start smoking ?</label>
+                    <select name="start-smoking" id="start-smoking">
+                        <option value="" selected disabled hidden>Choose</option>
+                        <option value="Friends">Friends</option>
+                        <option value="Family">Family</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <label for="lc-date">When did you have you last cigarette ?</label>
+                    <input type="date" id="lc-date">
+                    <label for="lc-signif">Did you choose this date on purpose ?</label>
+                    <select name="lc-signif" id="lc-signif">
+                        <option value="" selected disabled hidden>...</option>
+                        <option value="yes">yes</option>
+                        <option value="no">no</option>
+                    </select>
+                    <label for="lc-signif-desc">Why ?</label>
+                    <select name="lc-signif-desc" id="lc-signif-desc">
+                        <option value="" selected disabled hidden>Choose</option>
+                        <option value="Birthday">Birthday</option>
+                        <option value="Anniversary">Anniversary</option>
+                        <option value="New Year\'s Resolution">New Year's Resolution</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div>
+                    <div id="ttq-div">
+                        <label for="ttq">Have you ever tried to quit ?</label>
+                        <select name="ttq" id="ttq">
+                            <option value="" selected disabled hidden>...</option>
+                            <option value="yes">yes</option>
+                            <option value="no">no</option>
+                        </select>
+                        <label for="ttq-nums">How many times ?</label>
+                        <input type="text" autofocus name="ttq-nums" size="2" id="dig5">
+                    </div>
+                    <div id="ttq-mthds-div">
+                        <label for="mthds">Methods tried</label>
+                        <div>
+                            <input type="checkbox" id="chck1" name="chck" value="Cold Turkey">
+                            <label for="chck1">Cold Turkey</label><br>
+                            <input type="checkbox" id="chck2" name="chck" value="Gradual Reduction">
+                            <label for="chck2">Gradual Reduction</label><br>
+                            <input type="checkbox" id="chck3" name="chck" value="Nicotine Replacement Therapy">
+                            <label for="chck3">Nicotine Replacement Therapy</label><br>
+                            <input type="checkbox" id="chck4" name="chck" value="Medication">
+                            <label for="chck4">Medication</label><br>
+                            <input type="checkbox" id="chck5" name="chck" value="Hypnosis">
+                            <label for="chck5">Hypnosis</label><br>
+                            <input type="checkbox" id="chck6" name="chck" value="Other">
+                            <label for="chck6">Other</label><br>
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+                    <label for="fail-rsn">Fail reason</label>
+                    <select name="fail-rsn" id="fail-rsn">
+                        <option value="" selected disabled hidden>Choose</option>
+                        <option value="Stress">Stress</option>
+                        <option value="Family">Family</option>
+                        <option value="Withdrawal Symptoms">Withdrawal Symptoms</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <label for="win-mthd">Winning method</label>
+                    <select name="win-mthd" id="win-mthd">
+                        <option value="" selected disabled hidden>Choose</option>
+                        <option value="Cold Turkey">Cold Turkey</option>
+                        <option value="Gradual Reduction">Gradual Reduction</option>
+                        <option value="Nicotine Replacement Therapy">Nicotine Replacement Therapy</option>
+                        <option value="Medication">Medication</option>
+                        <option value="Hypnosis">Hypnosis</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <label for="nw-hbt">Have you replaced smoking with another habit ?</label>
+                    <select name="nw-hbt" id="nw-hbt">
+                        <option value="" selected disabled hidden>...</option>
+                        <option value="yes">yes</option>
+                        <option value="no">no</option>
+                    </select>
+                    <label for="nw-hbt-desc">What kind of habit?</label>
+                    <select name="nw-hbt-desc" id="nw-hbt-desc">
+                        <option value="" selected disabled hidden>Choose</option>
+                        <option value="Chewing gum">Chewing gum</option>
+                        <option value="Beverage">Beverage</option>
+                        <option value="Snack">Snack</option>
+                        <option value="Physical activity">Physical activity</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <label for="qt-rsn">Quitting reason</label>
+                    <select name="qt-rsn" id="qt-rsn">
+                        <option value="" selected disabled hidden>Choose</option>
+                        <option value="Health issues">Health issues</option>
+                        <option value="Family">Family</option>
+                        <option value="Friends">Friends</option>
+                        <option value="General health">General health</option>
+                        <option value="Dislike">Dislike</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <label for="hlth-iss">Have you developed any smoking related health issues ?</label>
+                    <select name="hlth-iss" id="hlth-iss">
+                        <option value="" selected disabled hidden>...</option>
+                        <option value="yes">yes</option>
+                        <option value="no">no</option>
+                    </select>
+                    <label for="gn-wght">Have you gained weight after quitting ?</label>
+                    <select name="gn-wght" id="gn-wght">
+                        <option value="" selected disabled hidden>...</option>
+                        <option value="yes">yes</option>
+                        <option value="no">no</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="urg-smoke">Do you sometimes have an urge to smoke ?</label>
+                    <select name="urg-smoke" id="urg-smoke">
+                        <option value="" selected disabled hidden>...</option>
+                        <option value="yes">yes</option>
+                        <option value="no">no</option>
+                    </select>
+                    <label for="urg-smoke-num">How often ?</label>
+                    <input type="text" autofocus name="ttq-nums" size="2" id="dig6">
+                    <label for="urg-smoke-num-tf">Timeframe</label>
+                    <select name="urg-smoke-num-tf" id="urg-smoke-num-tf">
+                        <option value="" selected disabled hidden>Choose</option>
+                        <option value="Day">Day</option>
+                        <option value="Week">Week</option>
+                        <option value="Month">Month</option>
+                        <option value="Year">Year</option>
+                    </select>
+                    <label for="urg-smoke-desc">Trigger</label>
+                    <select name="urg-smoke-desc" id="urg-smoke-desc">
+                        <option value="" selected disabled hidden>Choose</option>
+                        <option value="Party">Party</option>
+                        <option value="Smell">Smell</option>
+                        <option value="Drinking">Drinking</option>
+                        <option value="Seeing someone smoking">Seeing someone smoking</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="ns-tried">Have you ever tried a tobacco product ?</label>
+                    <select name="ns-tried" id="ns-tried">
+                        <option value="" selected disabled hidden>...</option>
+                        <option value="yes">yes</option>
+                        <option value="no">no</option>
+                    </select>
+                    <label for="ns-tried-age">How old were you ?</label>
+                    <input type="text" autofocus name="ns-tried-age" size="2" id="dig7">
+                    <label for="ns-frst-try-like">Did you like it ?</label>
+                    <select name="ns-frst-try-like" id="ns-frst-try-like">
+                        <option value="" selected disabled hidden>...</option>
+                        <option value="yes">yes</option>
+                        <option value="no">no</option>
+                    </select>
+                    <label for="ns-no-start">Why didn't you start ?</label>
+                    <select name="ns-no-start" id="ns-no-start">
+                        <option value="" selected disabled hidden>Choose</option>
+                        <option value="Didn\'t like it">Didn't like it</option>
+                        <option value="No friends smoking">No friends smoking</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="gender">
+                        <option value="" selected disabled hidden>Choose</option>
+                        <option value="F">F</option>
+                        <option value="M">M</option>
+                        <option value="O">O</option>
+                    </select>
+                    <label for="occupation">Occupation</label>
+                    <select name="occupation" id="occupation">
+                        <option value="" selected disabled hidden>Choose</option>
+                        <option value="IT">IT</option>
+                        <option value="Agriculture">Agriculture</option>
+                        <option value="Finance">Finance</option>
+                        <option value="Health Services">Health Services</option>
+                        <option value="Education Services">Education Services</option>
+                        <option value="Manufacturing">Manufacturing</option>
+                        <option value="Retail">Retail</option>
+                        <option value="Hospitality">Hospitality</option>
+                    </select>
+                    <label for="education">Education</label>
+                    <select name="education" id="education">
+                        <option value="" selected disabled hidden>Choose</option>
+                        <option value="High School">High School</option>
+                        <option value="Associate Degree">Associate Degree</option>
+                        <option value="Bachelor Degree">Bachelor Degree</option>
+                        <option value="Master\'s Degree">Master's Degree</option>
+                        <option value="Doctoral Degree">Doctoral Degree</option>
+                    </select>
+                    <label for="country">Country code</label>
+                    <input type="text" autofocus name="country" size="3" id="cc1">
+                    <label for="city">City</label>
+                    <input type="text" autofocus name="city" id="txt2">
+                </div>
+                <button type="button" onClick="submitToAPI(event)" class="calculate">Submit</button>
+                <button type="button" class="calculate" id="just-stats">Statistics</button>
+                <button type="button" class="calculate" id="download">Download dataset</button>
+                
+            </div>
+        </form>
+
+        <!-- <div class="lds-dual-ring" style="display: none;" id="lds-dual-ring"></div> -->
+
+        <div id="charts-all" style="display: none;">
+            <div id="heatmap">
+                <div id="heatmap-title">
+                    <h3 >What is the most popular month for quitting ?</h3>
+                    <p>Breaking a bad habit such as smoking is one of the most popular New Years resolutions. One could therefore expect that January could be the most popular month for quitting smoking.</p> 
+                </div>               
+                <div id="heatmap1"></div>
+            </div>
+
+            <div id="bar-div">
+                <div id="barchart-title">           
+                <h3 >Which gender holds on to smoking for the longest time ?</h3>
+                <p>Statistics around the world show that the share of male smokers is higher than female smokers in nearly every country. Does that also mean that men tend to smoke for more years than women ?</p>
+                </div>    
+                <div id="bar-chart"></div>
+            </div>
+            <div>
+                <div id="bar-chart-hor"></div>
+                <div id="barcharthor-title">
+                    <h3 >What are the most popular methods that helped people quit ?</h3>
+                    <p>Different methods work for different people. From Hollywood celebrities relying on the power of hypnosis to research pointing towards nicotine replacement therapy. How do people quit ?</p>
+                </div>
+            </div>
+            <div>
+                <div id="piechart-title">
+                    <h3 >What is the motivation behind quitting ?</h3>
+                    <p>Overcoming an addiction and reaching your habit-free goal is a difficult process. One of the keys to success is having a strong reason for kicking the habit. Reason so strong that your cravings will not work. What are the most common reasons 
+                    with respect to smoking ?
+                    </p>
+                </div>
+                <div id="pie-chart"></div>
+            </div>
+            <div>
+                <div id="box-plot"></div>
+                <div id="boxplot-title">
+                    <h3 >First tobacco use per country</h3>
+                    <p>Smoking rates are luckily falling all around the world regerdless of cultures, countries or contitinents. Let's see if first tobacco exposure varies by country.</p>
+                    <p>Note: Min value - corresponds to the minimum of started smoking at age of the given country.</p>
+                </div>
+            </div>
+            <div>
+                <div id="donut-title">
+                    <h3 >Did people like the taste of their first cigarette ?</h3>
+                    <p>The taste of cigarettes can be very subjective, ranging from coffee, leaves, smoked meat to burning paper. Many smokers even say that if they tasted something when they started, the taste actually becomes dull over time.</p>
+                </div>
+                <div id="donut-chart"></div>
+            </div>
+        </div>
+        <p id="loading" style="display: none;">Loading...</p>
+    </section>
+
+    
+
+
+
+
+
+    
+    <script src="https://cdn.plot.ly/plotly-2.12.1.min.js"></script>
+    <script type="text/javascript" src="//d3js.org/d3.v3.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/cal-heatmap/3.3.10/cal-heatmap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/js/splide.min.js"
+        integrity="sha256-bPFHGtlzinBbML+yf5JBexDq8KynAuUMXc3ksBY9Eyo=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+    <script src="moment-precise-range.js"></script>
+    <script src="index_new.js"></script>
+    <footer style="display: none;">Copyright &#169; 2022 ditchthestick</footer>
+</body>
+
+</html>
